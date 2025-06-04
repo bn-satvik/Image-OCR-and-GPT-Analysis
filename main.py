@@ -1,84 +1,84 @@
 import os
 import json
+import base64
 import requests
-from PIL import Image
-import pytesseract
-from pytesseract import Output
 from dotenv import load_dotenv
-import time  # For measuring execution time
+import time
 
-# Start timer
+# Start timer to measure script execution time
 start_time = time.time()
 
 # Load environment variables from .env file
 load_dotenv()
 
-# Load API keys and paths from .env
+# Get Sage API token from environment
 API_TOKEN = os.getenv("API_TOKEN")
-TESSERACT_PATH = os.getenv("TESSERACT_PATH")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # Not used currently
 
-# Set Tesseract executable path
-pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+# Function to convert an image to a base64-encoded string
+def encode_image_to_base64(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
 
-# Extract text and bounding boxes from image using OCR
-def extract_text_with_boxes(image_path):
-    image = Image.open(image_path)
-    data = pytesseract.image_to_data(image, output_type=Output.DICT)
-    
-    results = []
-    for i in range(len(data['text'])):
-        # Keep only confident, non-empty text
-        if data['text'][i].strip() and int(data['conf'][i]) > 0:
-            results.append({
-                'text': data['text'][i],
-                'bbox': [
-                    data['left'][i],
-                    data['top'][i],
-                    data['left'][i] + data['width'][i],
-                    data['top'][i] + data['height'][i]
-                ]
-            })
-    return results
+# Function to send the image and prompt to Sage GPT and extract text with bounding boxes
+def extract_text_and_boxes_with_sage(image_path, token):
+    # Convert image to base64
+    base64_image = encode_image_to_base64(image_path)
 
-# Send extracted text to Sage GPT for analysis
-def analyze_with_sage_gpt(text, token):
+    # Prompt to instruct Sage GPT to extract text and bounding boxes
+    prompt = (
+        "Please extract all visible text in this image and return it as a list of objects "
+        "with this format: {text: '...', bounding_box: [x1, y1, x2, y2]}, where coordinates are in image pixel space."
+    )
+
+    # Sage API endpoint
     url = "https://api.sage.cudasvc.com/openai/chat/completions"
+    
+    # HTTP headers including authorization
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
         "Accept": "application/json"
     }
+
+    # Compose request data: prompt + image (in base64)
     data = {
         "model": "gpt-4o-mini",
         "messages": [
-            {"role": "user", "content": text}
+            {"role": "user", "content": prompt},  # Send prompt
+            {
+                "role": "user",
+                "content": [  # Attach image as base64
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}"
+                        }
+                    }
+                ]
+            }
         ]
     }
+
+    # Send POST request to Sage API
     response = requests.post(url, headers=headers, json=data)
-    response.raise_for_status()
+    response.raise_for_status()  # Raise error if request fails
+
+    # Extract GPT response text
     result = response.json()
     return result['choices'][0]['message']['content']
 
-# Main function to run everything
+# Main function to run the full process
 def main():
     image_path = "assets/example.jpg"         # Input image path
-    output_path = "output/result.json"        # Output JSON path
+    output_path = "output/result.json"        # Output file path
 
-    # Run OCR on the image
-    ocr_results = extract_text_with_boxes(image_path)
+    # Get result from Sage GPT
+    sage_response = extract_text_and_boxes_with_sage(image_path, API_TOKEN)
 
-    # Combine all OCR text into one string
-    combined_text = " ".join([item['text'] for item in ocr_results])
-
-    # Analyze text using Sage GPT
-    sage_result = analyze_with_sage_gpt(combined_text, API_TOKEN)
-
-    # Save OCR and GPT results to JSON
+    # Save Sage result to JSON file
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump({
-            "ocr_results": ocr_results,
-            "sage_gpt_analysis": sage_result
+            "sage_gpt_result": sage_response
         }, f, indent=4)
 
     print(f"Processed {image_path}, results saved to {output_path}")
@@ -86,6 +86,6 @@ def main():
 # Run the script
 if __name__ == "__main__":
     main()
-    # Show total time taken
+    # Print total execution time
     end_time = time.time()
     print(f"Total execution time: {end_time - start_time:.2f} seconds")
