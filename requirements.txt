@@ -1,0 +1,6 @@
+pytesseract
+pillow
+python-dotenv
+transformers
+torch
+requests
