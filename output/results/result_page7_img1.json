@@ -1,0 +1,5 @@
+{
+    "page": 7,
+    "image_index": 1,
+    "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 150, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [180, 10, 400, 30] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [10, 50, 200, 70] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [10, 90, 200, 110] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [10, 130, 100, 150] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [10, 170, 250, 190] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [10, 210, 150, 230] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [10, 250, 150, 270] },\n    { \"text\": \"Signature\", \"bounding_box\": [10, 290, 100, 310] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [400, 10, 520, 30] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [400, 50, 550, 70] }\n]\n```"
+}

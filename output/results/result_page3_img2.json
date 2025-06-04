@@ -1,0 +1,5 @@
+{
+    "page": 3,
+    "image_index": 2,
+    "sage_gpt_result": "```json\n[\n    { \"text\": \"Sensitive data\", \"bounding_box\": [40, 90, 180, 130] },\n    { \"text\": \"Not already public,\", \"bounding_box\": [40, 130, 180, 150] },\n    { \"text\": \"may cause harm\", \"bounding_box\": [40, 150, 180, 170] },\n    { \"text\": \"if disclosed\", \"bounding_box\": [40, 170, 180, 190] },\n    { \"text\": \"Private data\", \"bounding_box\": [250, 130, 400, 170] },\n    { \"text\": \"Personal data\", \"bounding_box\": [400, 90, 560, 130] },\n    { \"text\": \"Defined and governed\", \"bounding_box\": [400, 130, 560, 150] },\n    { \"text\": \"by data protection\", \"bounding_box\": [400, 150, 560, 170] },\n    { \"text\": \"and regulation\", \"bounding_box\": [400, 170, 560, 190] }\n]\n```"
+}

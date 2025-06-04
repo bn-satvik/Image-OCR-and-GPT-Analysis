@@ -1,0 +1,47 @@
+[
+    {
+        "page": 1,
+        "image_index": 1,
+        "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 200, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [10, 40, 250, 60] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [10, 70, 150, 90] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [10, 100, 150, 120] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [10, 130, 100, 150] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [10, 160, 300, 180] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [10, 190, 150, 210] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [10, 220, 150, 240] },\n    { \"text\": \"Signature\", \"bounding_box\": [10, 250, 100, 270] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [300, 10, 400, 30] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [300, 40, 400, 60] }\n]\n```"
+    },
+    {
+        "page": 1,
+        "image_index": 2,
+        "sage_gpt_result": "Here is the extracted text from the image in the requested format:\n\n```json\n[\n    { \"text\": \"Capital One\", \"bounding_box\": [40, 20, 220, 50] },\n    { \"text\": \"platinum\", \"bounding_box\": [40, 60, 130, 80] },\n    { \"text\": \"5412\", \"bounding_box\": [40, 100, 80, 120] },\n    { \"text\": \"7534\", \"bounding_box\": [100, 100, 140, 120] },\n    { \"text\": \"5678\", \"bounding_box\": [160, 100, 200, 120] },\n    { \"text\": \"9010\", \"bounding_box\": [220, 100, 260, 120] },\n    { \"text\": \"LEE H CARDHOLDER\", \"bounding_box\": [40, 140, 220, 160] },\n    { \"text\": \"12/20\", \"bounding_box\": [40, 180, 80, 200] },\n    { \"text\": \"mastercard\", \"bounding_box\": [40, 220, 130, 240] }\n]\n```\n\nPlease note that the bounding box coordinates are arbitrary for the sake of this example; they would need to be adjusted according to the actual image dimensions and positioning."
+    },
+    {
+        "page": 2,
+        "image_index": 1,
+        "sage_gpt_result": "Here is the extracted text in the specified format:\n\n```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 150, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [10, 35, 240, 55] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [10, 80, 150, 100] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [10, 110, 150, 130] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [10, 140, 90, 160] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [10, 170, 200, 190] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [10, 200, 120, 220] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [10, 230, 150, 250] },\n    { \"text\": \"Signature\", \"bounding_box\": [10, 260, 100, 280] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [250, 10, 350, 30] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [250, 35, 350, 55] }\n]\n```\n\nNote: The bounding box coordinates are illustrative and may not correspond to the actual pixel values from the provided image. You would need to adjust the coordinates based on the actual layout of your image."
+    },
+    {
+        "page": 3,
+        "image_index": 1,
+        "sage_gpt_result": "Here is the extracted text from the image in the requested format:\n\n```json\n[\n    {\n        \"text\": \"American Express Corporate: 378734493671000\",\n        \"bounding_box\": [10, 10, 370, 30]\n    },\n    {\n        \"text\": \"American Express Corporate: 378734493671000\",\n        \"bounding_box\": [10, 40, 370, 60]\n    },\n    {\n        \"text\": \"Dankort (PBS): 5019717010103742\",\n        \"bounding_box\": [10, 70, 300, 90]\n    },\n    {\n        \"text\": \"Switch/Solo (Paymenttech): 63311010199990016\",\n        \"bounding_box\": [10, 100, 370, 120]\n    }\n]\n```\n\nNote: The bounding box coordinates are approximate and may vary depending on the actual size and position of the text in the image. Adjust them accordingly for precise locations."
+    },
+    {
+        "page": 3,
+        "image_index": 2,
+        "sage_gpt_result": "```json\n[\n    { \"text\": \"Sensitive data\", \"bounding_box\": [40, 90, 180, 130] },\n    { \"text\": \"Not already public,\", \"bounding_box\": [40, 130, 180, 150] },\n    { \"text\": \"may cause harm\", \"bounding_box\": [40, 150, 180, 170] },\n    { \"text\": \"if disclosed\", \"bounding_box\": [40, 170, 180, 190] },\n    { \"text\": \"Private data\", \"bounding_box\": [250, 130, 400, 170] },\n    { \"text\": \"Personal data\", \"bounding_box\": [400, 90, 560, 130] },\n    { \"text\": \"Defined and governed\", \"bounding_box\": [400, 130, 560, 150] },\n    { \"text\": \"by data protection\", \"bounding_box\": [400, 150, 560, 170] },\n    { \"text\": \"and regulation\", \"bounding_box\": [400, 170, 560, 190] }\n]\n```"
+    },
+    {
+        "page": 4,
+        "image_index": 1,
+        "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 150, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [30, 40, 230, 60] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [30, 70, 150, 90] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [30, 100, 150, 120] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [30, 130, 150, 150] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [30, 160, 250, 180] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [30, 190, 150, 210] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [30, 220, 150, 240] },\n    { \"text\": \"Signature\", \"bounding_box\": [30, 250, 150, 270] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [300, 10, 400, 30] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [300, 40, 400, 60] }\n]\n```"
+    },
+    {
+        "page": 5,
+        "image_index": 1,
+        "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 100, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [50, 50, 300, 70] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [50, 80, 200, 100] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [50, 110, 200, 130] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [50, 140, 150, 160] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [50, 170, 250, 190] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [50, 200, 150, 220] },\n    { \"text\": \"Signature\", \"bounding_box\": [50, 230, 150, 250] }\n]\n``` \n\nNote: The bounding box coordinates are placeholders as the actual coordinates cannot be extracted from the image. If you have access to specific coordinate data, please replace them accordingly."
+    },
+    {
+        "page": 6,
+        "image_index": 1,
+        "sage_gpt_result": "Here is the extracted text as a list of objects with the specified format:\n\n```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 20, 150, 50] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [160, 20, 350, 50] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [10, 60, 200, 90] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [10, 100, 200, 130] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [10, 140, 100, 170] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [10, 180, 250, 210] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [10, 220, 150, 250] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [10, 260, 150, 290] },\n    { \"text\": \"Signature\", \"bounding_box\": [10, 300, 100, 330] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [400, 20, 600, 50] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [400, 60, 600, 90] }\n]\n``` \n\nNote: The bounding box coordinates are fictional and provided for the sake of example since the actual image is not analyzed."
+    },
+    {
+        "page": 7,
+        "image_index": 1,
+        "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 150, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [180, 10, 400, 30] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [10, 50, 200, 70] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [10, 90, 200, 110] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [10, 130, 100, 150] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [10, 170, 250, 190] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [10, 210, 150, 230] },\n    { \"text\": \"D. manikandan\", \"bounding_box\": [10, 250, 150, 270] },\n    { \"text\": \"Signature\", \"bounding_box\": [10, 290, 100, 310] },\n    { \"text\": \"\u092d\u093e\u0930\u0924 \u0938\u0930\u0915\u093e\u0930\", \"bounding_box\": [400, 10, 520, 30] },\n    { \"text\": \"GOVT. OF INDIA\", \"bounding_box\": [400, 50, 550, 70] }\n]\n```"
+    }
+]

@@ -1,0 +1,5 @@
+{
+    "page": 3,
+    "image_index": 1,
+    "sage_gpt_result": "Here is the extracted text from the image in the requested format:\n\n```json\n[\n    {\n        \"text\": \"American Express Corporate: 378734493671000\",\n        \"bounding_box\": [10, 10, 370, 30]\n    },\n    {\n        \"text\": \"American Express Corporate: 378734493671000\",\n        \"bounding_box\": [10, 40, 370, 60]\n    },\n    {\n        \"text\": \"Dankort (PBS): 5019717010103742\",\n        \"bounding_box\": [10, 70, 300, 90]\n    },\n    {\n        \"text\": \"Switch/Solo (Paymenttech): 63311010199990016\",\n        \"bounding_box\": [10, 100, 370, 120]\n    }\n]\n```\n\nNote: The bounding box coordinates are approximate and may vary depending on the actual size and position of the text in the image. Adjust them accordingly for precise locations."
+}

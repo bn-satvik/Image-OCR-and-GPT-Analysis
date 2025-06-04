@@ -1,0 +1,5 @@
+{
+    "page": 5,
+    "image_index": 1,
+    "sage_gpt_result": "```json\n[\n    { \"text\": \"\u0906\u092f\u0915\u0930 \u0935\u093f\u092d\u093e\u0917\", \"bounding_box\": [10, 10, 100, 30] },\n    { \"text\": \"INCOME TAX DEPARTMENT\", \"bounding_box\": [50, 50, 300, 70] },\n    { \"text\": \"D MANIKANDAN\", \"bounding_box\": [50, 80, 200, 100] },\n    { \"text\": \"DURAISAMY\", \"bounding_box\": [50, 110, 200, 130] },\n    { \"text\": \"16/07/1986\", \"bounding_box\": [50, 140, 150, 160] },\n    { \"text\": \"Permanent Account Number\", \"bounding_box\": [50, 170, 250, 190] },\n    { \"text\": \"BNZPM2501F\", \"bounding_box\": [50, 200, 150, 220] },\n    { \"text\": \"Signature\", \"bounding_box\": [50, 230, 150, 250] }\n]\n``` \n\nNote: The bounding box coordinates are placeholders as the actual coordinates cannot be extracted from the image. If you have access to specific coordinate data, please replace them accordingly."
+}

@@ -1,0 +1,5 @@
+{
+    "page": 1,
+    "image_index": 2,
+    "sage_gpt_result": "Here is the extracted text from the image in the requested format:\n\n```json\n[\n    { \"text\": \"Capital One\", \"bounding_box\": [40, 20, 220, 50] },\n    { \"text\": \"platinum\", \"bounding_box\": [40, 60, 130, 80] },\n    { \"text\": \"5412\", \"bounding_box\": [40, 100, 80, 120] },\n    { \"text\": \"7534\", \"bounding_box\": [100, 100, 140, 120] },\n    { \"text\": \"5678\", \"bounding_box\": [160, 100, 200, 120] },\n    { \"text\": \"9010\", \"bounding_box\": [220, 100, 260, 120] },\n    { \"text\": \"LEE H CARDHOLDER\", \"bounding_box\": [40, 140, 220, 160] },\n    { \"text\": \"12/20\", \"bounding_box\": [40, 180, 80, 200] },\n    { \"text\": \"mastercard\", \"bounding_box\": [40, 220, 130, 240] }\n]\n```\n\nPlease note that the bounding box coordinates are arbitrary for the sake of this example; they would need to be adjusted according to the actual image dimensions and positioning."
+}
