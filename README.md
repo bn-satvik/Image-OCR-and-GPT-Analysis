@@ -1,15 +1,11 @@
 # Image OCR and GPT Analysis
 
-This project extracts text with bounding boxes from an image using Tesseract OCR, then sends the extracted text to Sage GPT (`gpt-4o-mini`) for analysis. The results are saved to a JSON file.
+This project extracts text and bounding boxes directly from an image using Sage GPT-4o-mini API.
 
-## Requirements
-
-- Python 3.x
-- Tesseract OCR installed ([Download here](https://github.com/tesseract-ocr/tesseract))
-- Required Python packages: `pillow`, `pytesseract`, `requests`, `python-dotenv`
+## Features
+- Sends the image to Sage API for text extraction with bounding box coordinates.
+- Saves the output as a JSON file.
+- Measures and prints the total execution time.
 
 ## Setup
-
-1. Install dependencies:
-   ```bash
-   pip install pillow pytesseract requests python-dotenv
+1. Clone the repo:
